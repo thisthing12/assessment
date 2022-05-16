@@ -348,7 +348,7 @@ April = """).lower()
     else:
         print("That is incorrect sorry")
         point_counter(points)
-    last_months = input("Do you want to go on to Maori days? (Y/N): ").upper()
+    last_months = input("Do you want to finish? (Y/N): ").upper()
     if last_months == 'Y':
         point_counter(points)
     elif last_months == 'N':
@@ -358,11 +358,11 @@ April = """).lower()
 
 
 def point_counter(points):
-    if points >= 1 < 10:
+    if points < 10:
         print("Try to get to Maori days next time. Thanks for playing")
-    elif points >= 10 < 20:
+    elif points == 10 or points < 20:
         print("You completed Maori numbers well done")
-    elif points >= 20 < 30:
+    elif points == 20 or points < 30:
         print("You completed Maori days amazing job")
     elif points == 30:
         print("You got 100% complete brilliant job")
