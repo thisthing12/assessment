@@ -1,6 +1,3 @@
-import random
-
-
 def welcome_screen():
     print("""---------------------------
 Welcome to The Maori quiz
@@ -352,7 +349,7 @@ April = """).lower()
     if last_months == 'Y':
         point_counter(points)
     elif last_months == 'N':
-        point_counter(points)
+        maori_months(points)
     else:
         print("That is not an answer")
 
