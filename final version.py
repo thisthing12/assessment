@@ -372,7 +372,7 @@ def point_counter(points):
 
 
 def extra_nums(points):
-    randomly = random.randint(1,5)
+    randomly = random.randint(1, 5)
     if randomly == 1:
         nine = input("""4 + 5 = """).lower()
         if nine == 'iwa':
@@ -416,7 +416,7 @@ def extra_nums(points):
 
 
 def extra_days(points):
-    randomize = random.randint(1,5)
+    randomize = random.randint(1, 5)
     if randomize == 1:
         tuesday = input("""Second day of the week = """).lower()
         if tuesday == 'ratu':
@@ -460,7 +460,7 @@ def extra_days(points):
 
 
 def extra_months(points):
-    randomizer = random.randint(1,5)
+    randomizer = random.randint(1, 5)
     if randomizer == 1:
         december = input("""December = """).lower()
         if december == 'hakihea':
