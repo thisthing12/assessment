@@ -154,7 +154,7 @@ def maori_numbers():
     if last_num == 'Y':
         maori_days(points)
     elif last_num == 'N':
-        extra_nums(points)
+        point_counter(points)
     else:
         print("That is not an answer")
 
@@ -253,7 +253,7 @@ Thursday = """).lower()
     if last_day == 'Y':
         maori_months(points)
     elif last_day == 'N':
-        extra_days(points)
+        point_counter(points)
     else:
         print("That is not an answer")
 
@@ -352,7 +352,7 @@ April = """).lower()
     if last_months == 'Y':
         point_counter(points)
     elif last_months == 'N':
-        extra_months(points)
+        point_counter(points)
     else:
         print("That is not an answer")
 
@@ -360,147 +360,15 @@ April = """).lower()
 def point_counter(points):
     if points < 10:
         print("Try to get to Maori days next time. Thanks for playing")
-    elif points == 10 or points < 20:
+    elif points >= 10 or points < 20:
         print("You completed Maori numbers well done")
-    elif points == 20 or points < 30:
+    elif points >= 20 or points < 30:
         print("You completed Maori days amazing job")
     elif points == 30:
         print("You got 100% complete brilliant job")
     else:
         print("Better luck next time")
     game_summary(points)
-
-
-def extra_nums(points):
-    randomly = random.randint(1, 5)
-    if randomly == 1:
-        nine = input("""4 + 5 = """).lower()
-        if nine == 'iwa':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomly == 2:
-        eight = input("""58 - 50 = """).lower()
-        if eight == 'waru':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomly == 3:
-        three = input("""754 - 751 = """).lower()
-        if three == 'toru':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomly == 4:
-        two = input("""35 - 33 = """).lower()
-        if two == 'rua':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomly == 5:
-        ten = input("""845 - 835 = """).lower()
-        if ten == 'tekau':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-
-
-def extra_days(points):
-    randomize = random.randint(1, 5)
-    if randomize == 1:
-        tuesday = input("""Second day of the week = """).lower()
-        if tuesday == 'ratu':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomize == 2:
-        monday = input("""First day of the week = """).lower()
-        if monday == 'rahina':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomize == 3:
-        wed = input("""Third day of the week = """).lower()
-        if wed == 'raapa':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomize == 4:
-        tue = input("""Second day of the week = """).lower()
-        if tue == 'ratu':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomize == 5:
-        wednesday = input("""Third day of the week = """).lower()
-        if wednesday == 'raapa':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-
-
-def extra_months(points):
-    randomizer = random.randint(1, 5)
-    if randomizer == 1:
-        december = input("""December = """).lower()
-        if december == 'hakihea':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomizer == 2:
-        november = input("""November = """).lower()
-        if november == 'whiringa-a-rangi':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomizer == 3:
-        march = input("""The third month = """).lower()
-        if march == 'poutu-te-rangi':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomizer == 4:
-        february = input("""The second month = """).lower()
-        if february == 'hui-tanguru':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
-    elif randomizer == 5:
-        october = input("""The tenth month = """).lower()
-        if october == 'whiringa-a-nuku':
-            print("That is correct!")
-            points += 1
-        else:
-            print("That is incorrect sorry")
-            point_counter(points)
 
 
 def game_summary(points):
