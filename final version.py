@@ -357,9 +357,9 @@ April = """).lower()
 def point_counter(points):
     if points < 10:
         print("Try to get to Maori days next time. Thanks for playing")
-    elif points >= 10 and points < 20:
+    elif 10 <= points < 20:
         print("You completed Maori numbers well done")
-    elif points >= 20 and points < 30:
+    elif 20 <= points < 30:
         print("You completed Maori days amazing job")
     elif points == 30:
         print("You got 100% complete brilliant job")
