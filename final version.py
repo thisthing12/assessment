@@ -18,7 +18,7 @@ The Maori quiz gives you three different type of questions
 \t2. Maori days where you are given days of the week and you have to change them into Maori
 \t3. Maori months where you are given months in a year and you have to change them into Maori
 After ten questions of each you are given a chance to go to the next type of questions
-you get points after each question you get right and be careful once you fail one you 
+you get points after each question you get right and be careful once you fail one time you 
 can't play anymore. So have fun.
 These are the Maori words you will need.
 1 - tahi
